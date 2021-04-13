@@ -1,0 +1,43 @@
+{
+  "name": "@totvs/tds-formatter-config",
+  "version": "0.0.1",
+  "displayName": "TOTVS Developer Studio Formatter Config",
+  "description": "Configuração padrão para formatação de fontes AdvPL e 4GL",
+  "categories": [
+    "Formatters"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/totvs/tds-formatter-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/totvs/tds-formatter-config.git"
+  },
+  "publisher": "TOTVS",
+  "author": {
+    "name": "TOTVS",
+    "email": "tecnologia@totvs.com.br"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "advpl",
+    "tlpp",
+    "4gl",
+    "tds",
+    "totvs",
+    "protheus",
+    "prettier",
+    "formatter"
+  ],
+  "main": "index.json",
+  "scripts": {
+    "---RELEASE---": "",
+    "release": "npx standard-version",
+    "to_publish": "git push --follow-tags origin develop && npm publish --access public",
+    "prepack": "npm run build",
+    "---MISC---": "",
+    "all-contributors:generate": "npx all-contributors generate",
+    "all-contributors:check": "npx all-contributors check"
+  },
+  "devDependencies": {}
+}
